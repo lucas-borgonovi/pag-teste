@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: arial;
+    text-transform: uppercase;
+}
+header{
+    background-color: #FF0909;
+
+}
+nav{
+    width:1366px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+.menu a:hover,.ativo{
+    color:#DDDDDD;
+    border-bottom: 2px solid #DDDDDD;
+    padding-bottom: 3px;
+}
+.banner{
+    width:1366px;
+    margin:auto;
+    position: relative;
+}
+.texto-banner{
+    position: absolute;
+    bottom: 50px;
+    left:50px;
+    color:white;
+}
+.texto-banner p{
+    margin-bottom:20px;
+    font-family: arial;
+}
+.texto-banner .t1{
+    font-family: times 'Times New Roman';
+    font-size: 40px;
+
+}
+.texto-banner .t2{
+    font-family: arial;
+    font-size: 30px;
+    
+}
+.container{
+    width: 1170px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+.card{
+    width:350px;
+    font-family: arial;
+    line-height: 2.0;
+    margin-top: 60px;
+}
+.btn{
+    font-family:arial;
+    background-color: #FF0909;
+    color:white;
+    text-transform: uppercase;
+    text-decoration: none; 
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+.card p{
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+.btn:hover{
+    color: #FF0909;
+    background-color: #DDDDDD;
+}
+footer{
+    background-color: #FF0909;
+    text-align:center;
+    color:white;
+    font-family: arial;
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+/* medias queries */
+/* tablet*/
+
+@media (max-width:1169px){
+    nav{
+        width:768px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .banner{
+        width: 768px;
+    }
+    .texto-banner .t1{
+        font-size: 22px;
+    }
+    .texto-banner .t2{
+        font-size:15px;
+    }
+    .container{
+        width: 720px;
+    }
+
+}
+/* Smart */
+@media (max-width:767px){
+    nav{
+        width:368px;
+        flex-direction: column;
+    }
+    .banner{
+        width:368px;
+    }
+    .banner img{
+        display:none;
+    }
+    .texto-banner{
+        color:black;
+        position: static;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .banner{
+        height: 
+    }
+    .menu{
+        flex-direction: column;
+        width: 150px;
+        padding-top: 15px;
+    }
+    .menu li{
+        padding-top:15px;
+    }
+    .container{
+        width:350px;
+    }
+
+}
+
+
